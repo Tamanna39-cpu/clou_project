@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 # Load environment variables
 load_dotenv()
 
-app = Flask(_name_)
+app = Flask(__name__)
 app.secret_key = os.getenv("SECRET_KEY", "default_secret")  # fallback
 
 # --- Database setup ---
@@ -104,5 +104,5 @@ def logout():
     session.clear()
     return redirect(url_for("intro"))
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
