@@ -1,0 +1,94 @@
+/* General Page Style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Container Box for forms and content */
+.container, .login-box, .dashboard-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 320px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* Headings */
+h1, h2 {
+    color: #333;
+}
+
+/* Input fields */
+input[type="text"], input[type="password"], input[type="file"] {
+    width: 85%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+}
+
+/* Password wrapper (eye button) */
+.password-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 0 8px;
+    margin: 8px 0;
+}
+.password-wrapper input {
+    border: none;
+    flex: 1;
+}
+.toggle-eye {
+    cursor: pointer;
+    font-size: 14px;
+    color: #007BFF;
+    margin-left: 5px;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+button:hover {
+    background: #0056b3;
+}
+
+/* Flash messages */
+.flash {
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    border-radius: 6px;
+    font-size: 14px;
+}
+.flash.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+.flash.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Upload warning for non-permitted users */
+.no-upload {
+    color: #d9534f;
+    font-weight: bold;
+    margin-top: 15px;
+}

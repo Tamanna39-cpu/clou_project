@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cloud File Storage</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <h1>Welcome to Cloud File Storage</h1>
+    <p>This project allows secure file uploads to AWS S3.</p>
+    <p>Only authenticated users can upload files.</p>
+    <a href="{{ url_for('login') }}"><button>Login</button></a>
+</div>
+</body>
+</html>
